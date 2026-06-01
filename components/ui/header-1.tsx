@@ -15,10 +15,12 @@ export function Header() {
   const scrolled = useScroll(10);
   const t = useTranslations("Header");
 
+  // Fixed widths sized for the longer (German) labels so the nav doesn't
+  // reflow when switching locale. Keep these in sync if labels change.
   const links = [
-    { label: t("features"), href: "#features" },
-    { label: t("howItWorks"), href: "#how-it-works" },
-    { label: t("pricing"), href: "#pricing" },
+    { label: t("features"), href: "#features", width: "min-w-[6.5rem]" },
+    { label: t("howItWorks"), href: "#how-it-works", width: "min-w-[10rem]" },
+    { label: t("pricing"), href: "#pricing", width: "min-w-[5rem]" },
   ];
 
   React.useEffect(() => {
@@ -55,15 +57,17 @@ export function Header() {
           {links.map((link) => (
             <a
               key={link.label}
-              className={buttonVariants({ variant: "ghost" })}
+              className={buttonVariants({ variant: "ghost", className: link.width })}
               href={link.href}
             >
               {link.label}
             </a>
           ))}
           <LanguageSwitcher className="ml-2" />
-          <Button variant="outline">{t("signIn")}</Button>
-          <Button asChild>
+          <Button variant="outline" className="min-w-[6rem]">
+            {t("signIn")}
+          </Button>
+          <Button asChild className="min-w-[9.5rem]">
             <a href="#upload">{t("tryFree")}</a>
           </Button>
         </div>
