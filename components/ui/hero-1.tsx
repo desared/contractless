@@ -79,7 +79,7 @@ export function HeroSection() {
 export function StatsSection() {
   const t = useTranslations("Stats");
   const stats = [
-    { value: "10K+", label: t("contractsAnalyzed") },
+    { value: "5K+", label: t("contractsAnalyzed") },
     { value: "30s", label: t("averageTime") },
     { value: "98%", label: t("clauseAccuracy") },
     { value: "4.9", label: t("userRating") },
