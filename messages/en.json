@@ -247,6 +247,70 @@
     "privacy": "Privacy",
     "terms": "Terms",
     "security": "Security",
-    "rights": "© 2026 ContractLess. All rights reserved."
+    "rights": "© 2026 ActOnData. All rights reserved.",
+    "builtBy": "A product of"
+  },
+  "About": {
+    "meta": {
+      "title": "About ContractLess — Built by ActOnData",
+      "description": "ContractLess is a product of ActOnData, a company focused on building intelligent tools that turn complex data into clear, actionable insights."
+    },
+    "eyebrow": "About us",
+    "heading": "Built by ActOnData",
+    "intro": "ContractLess is a product of ActOnData, a company focused on building intelligent tools that turn complex data into clear, actionable insights.",
+    "visitSite": "Visit actondata.io",
+    "backHome": "Back to ContractLess",
+    "mission": {
+      "heading": "Why we built ContractLess",
+      "body": "Contracts are where the most consequential decisions in people's lives get written down — where they live, what they own, how a relationship ends — and they are almost always written in language meant for someone else. Most people sign anyway, because the alternative is an hourly rate nobody can justify for a two-page lease.",
+      "body2": "We think that gap is a data problem. A contract is structured information wearing a disguise. Strip the disguise away and what remains is a short list of things you are agreeing to, a shorter list of things worth pushing back on, and a clear sense of which is which. That is the product.",
+      "closing": "Clarity shouldn't be a premium feature."
+    },
+    "principles": {
+      "heading": "How we build",
+      "subheading": "The same principles run through every product ActOnData ships.",
+      "items": {
+        "clarity": {
+          "title": "Clarity over cleverness",
+          "description": "An answer nobody understands isn't an answer. We optimise for the sentence a person can act on, not the one that sounds most sophisticated."
+        },
+        "privacy": {
+          "title": "Your documents stay yours",
+          "description": "Contracts carry some of the most sensitive information people have. We process what we need, keep no more than we must, and never treat your documents as training material."
+        },
+        "rigour": {
+          "title": "Honest about limits",
+          "description": "We tell you what we're confident about and what we're not. ContractLess explains contracts in plain language — it doesn't pretend to be your lawyer."
+        },
+        "craft": {
+          "title": "Shipped, then sharpened",
+          "description": "We put working tools in people's hands early and improve them against real use, rather than polishing in private against imagined requirements."
+        }
+      }
+    },
+    "company": {
+      "heading": "About ActOnData",
+      "body": "ActOnData builds software at the point where data stops being a report and starts being a decision. Our work spans document intelligence, applied machine learning, and the unglamorous data engineering that makes both of them trustworthy.",
+      "body2": "ContractLess is the consumer-facing edge of that work: the same extraction and reasoning pipeline we build for organisations, pointed at a document you actually have to sign.",
+      "stats": {
+        "focus": {
+          "value": "Document AI",
+          "label": "Core focus"
+        },
+        "approach": {
+          "value": "Privacy-first",
+          "label": "Data approach"
+        },
+        "reach": {
+          "value": "EN · DE",
+          "label": "Languages supported"
+        }
+      }
+    },
+    "contact": {
+      "heading": "Work with us",
+      "body": "Partnership enquiries, press, or a data problem of your own — we read everything that comes in.",
+      "cta": "actondata.io"
+    }
   }
 }

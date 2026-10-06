@@ -18,9 +18,9 @@ export function Header() {
   // Fixed widths sized for the longer (German) labels so the nav doesn't
   // reflow when switching locale. Keep these in sync if labels change.
   const links = [
-    { label: t("features"), href: "#features", width: "min-w-[6.5rem]" },
-    { label: t("howItWorks"), href: "#how-it-works", width: "min-w-[10rem]" },
-    { label: t("pricing"), href: "#pricing", width: "min-w-[5rem]" },
+    { label: t("features"), href: "/#features", width: "min-w-[6.5rem]" },
+    { label: t("howItWorks"), href: "/#how-it-works", width: "min-w-[10rem]" },
+    { label: t("pricing"), href: "/#pricing", width: "min-w-[5rem]" },
   ];
 
   React.useEffect(() => {
@@ -55,20 +55,20 @@ export function Header() {
         </Link>
         <div className="hidden items-center gap-2 md:flex">
           {links.map((link) => (
-            <a
+            <Link
               key={link.label}
               className={buttonVariants({ variant: "ghost", className: link.width })}
               href={link.href}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <LanguageSwitcher className="ml-2" />
           <Button variant="outline" className="min-w-[6rem]">
             {t("signIn")}
           </Button>
           <Button asChild className="min-w-[9.5rem]">
-            <a href="#upload">{t("tryFree")}</a>
+            <Link href="/#upload">{t("tryFree")}</Link>
           </Button>
         </div>
         <div className="flex items-center gap-2 md:hidden">
@@ -88,7 +88,7 @@ export function Header() {
       <MobileMenu open={open} className="flex flex-col justify-between gap-2">
         <div className="grid gap-y-2">
           {links.map((link) => (
-            <a
+            <Link
               key={link.label}
               className={buttonVariants({
                 variant: "ghost",
@@ -98,7 +98,7 @@ export function Header() {
               onClick={() => setOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex flex-col gap-2">
@@ -106,9 +106,9 @@ export function Header() {
             {t("signIn")}
           </Button>
           <Button asChild className="w-full">
-            <a href="#upload" onClick={() => setOpen(false)}>
+            <Link href="/#upload" onClick={() => setOpen(false)}>
               {t("tryFree")}
-            </a>
+            </Link>
           </Button>
         </div>
       </MobileMenu>

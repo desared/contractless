@@ -247,6 +247,70 @@
     "privacy": "Datenschutz",
     "terms": "AGB",
     "security": "Sicherheit",
-    "rights": "© 2026 ContractLess. Alle Rechte vorbehalten."
+    "rights": "© 2026 ActOnData. Alle Rechte vorbehalten.",
+    "builtBy": "Ein Produkt von"
+  },
+  "About": {
+    "meta": {
+      "title": "Über uns — ContractLess, ein Produkt von ActOnData",
+      "description": "ContractLess ist ein Produkt von ActOnData, einem Unternehmen, das intelligente Werkzeuge entwickelt, die komplexe Daten in klare, umsetzbare Erkenntnisse verwandeln."
+    },
+    "eyebrow": "Über uns",
+    "heading": "Entwickelt von ActOnData",
+    "intro": "ContractLess ist ein Produkt von ActOnData, einem Unternehmen, das intelligente Werkzeuge entwickelt, die komplexe Daten in klare, umsetzbare Erkenntnisse verwandeln.",
+    "visitSite": "actondata.io besuchen",
+    "backHome": "Zurück zu ContractLess",
+    "mission": {
+      "heading": "Warum wir ContractLess gebaut haben",
+      "body": "In Verträgen werden die folgenreichsten Entscheidungen im Leben festgehalten — wo man wohnt, was einem gehört, wie eine Beziehung endet — und sie sind fast immer in einer Sprache geschrieben, die für jemand anderen gedacht ist. Die meisten unterschreiben trotzdem, weil die Alternative ein Stundensatz ist, den niemand für einen zweiseitigen Mietvertrag rechtfertigen kann.",
+      "body2": "Wir halten diese Lücke für ein Datenproblem. Ein Vertrag ist strukturierte Information in Verkleidung. Nimmt man die Verkleidung weg, bleibt eine kurze Liste dessen, dem man zustimmt, eine noch kürzere Liste dessen, worüber man verhandeln sollte, und die Klarheit darüber, was wovon ist. Genau das ist das Produkt.",
+      "closing": "Klarheit sollte kein Premium-Feature sein."
+    },
+    "principles": {
+      "heading": "Wie wir arbeiten",
+      "subheading": "Dieselben Prinzipien prägen jedes Produkt, das ActOnData veröffentlicht.",
+      "items": {
+        "clarity": {
+          "title": "Klarheit vor Raffinesse",
+          "description": "Eine Antwort, die niemand versteht, ist keine Antwort. Wir optimieren auf den Satz, nach dem man handeln kann — nicht auf den, der am anspruchsvollsten klingt."
+        },
+        "privacy": {
+          "title": "Ihre Dokumente bleiben Ihre",
+          "description": "Verträge enthalten einige der sensibelsten Informationen überhaupt. Wir verarbeiten nur, was nötig ist, speichern nicht mehr als erforderlich und nutzen Ihre Dokumente niemals als Trainingsmaterial."
+        },
+        "rigour": {
+          "title": "Ehrlich über Grenzen",
+          "description": "Wir sagen, worauf wir uns festlegen und worauf nicht. ContractLess erklärt Verträge in einfacher Sprache — es gibt sich nicht als Ihre Anwältin oder Ihr Anwalt aus."
+        },
+        "craft": {
+          "title": "Erst ausliefern, dann schärfen",
+          "description": "Wir geben funktionierende Werkzeuge früh in die Hand und verbessern sie anhand echter Nutzung, statt im Stillen an gedachten Anforderungen zu feilen."
+        }
+      }
+    },
+    "company": {
+      "heading": "Über ActOnData",
+      "body": "ActOnData entwickelt Software genau dort, wo Daten aufhören, ein Report zu sein, und anfangen, eine Entscheidung zu werden. Unsere Arbeit umfasst Dokumenten-Intelligenz, angewandtes maschinelles Lernen und das unglamouröse Data Engineering, das beides erst verlässlich macht.",
+      "body2": "ContractLess ist die Verbraucherseite dieser Arbeit: dieselbe Extraktions- und Analysepipeline, die wir für Organisationen bauen, gerichtet auf ein Dokument, das Sie tatsächlich unterschreiben müssen.",
+      "stats": {
+        "focus": {
+          "value": "Dokumenten-KI",
+          "label": "Kernfokus"
+        },
+        "approach": {
+          "value": "Datenschutz zuerst",
+          "label": "Umgang mit Daten"
+        },
+        "reach": {
+          "value": "EN · DE",
+          "label": "Unterstützte Sprachen"
+        }
+      }
+    },
+    "contact": {
+      "heading": "Zusammenarbeiten",
+      "body": "Partnerschaftsanfragen, Presse oder ein eigenes Datenproblem — wir lesen alles, was hereinkommt.",
+      "cta": "actondata.io"
+    }
   }
 }
