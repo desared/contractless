@@ -2,22 +2,26 @@ import { ScanLine } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
+const ACTONDATA_URL = "https://actondata.io";
+
 export function Footer() {
   const t = useTranslations("Footer");
 
+  // Internal hrefs go through the locale-aware Link; "#" entries are
+  // placeholders for pages that don't exist yet.
   const groups = [
     {
       title: t("product"),
       items: [
-        { label: t("features"), href: "#features" },
-        { label: t("pricing"), href: "#pricing" },
+        { label: t("features"), href: "/#features" },
+        { label: t("pricing"), href: "/#pricing" },
         { label: t("api"), href: "#" },
       ],
     },
     {
       title: t("company"),
       items: [
-        { label: t("about"), href: "#" },
+        { label: t("about"), href: "/about" },
         { label: t("blog"), href: "#" },
         { label: t("careers"), href: "#" },
       ],
@@ -48,6 +52,17 @@ export function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               {t("tagline")}
             </p>
+            <p className="mt-4 text-sm text-muted-foreground">
+              {t("builtBy")}{" "}
+              <a
+                href={ACTONDATA_URL}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="font-medium text-foreground underline-offset-4 hover:underline"
+              >
+                ActOnData
+              </a>
+            </p>
           </div>
 
           {groups.map((group) => (
@@ -58,12 +73,21 @@ export function Footer() {
               <ul className="space-y-2 text-sm">
                 {group.items.map((item) => (
                   <li key={item.label}>
-                    <a
-                      href={item.href}
-                      className="text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      {item.label}
-                    </a>
+                    {item.href.startsWith("#") ? (
+                      <a
+                        href={item.href}
+                        className="text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {item.label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        {item.label}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
