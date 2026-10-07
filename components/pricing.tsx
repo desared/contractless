@@ -4,11 +4,27 @@ import { useTranslations } from "next-intl";
 
 type PlanKey = "free" | "pro" | "business";
 
-const planDefs: { key: PlanKey; price: string; periodKey: "forever" | "perMonth"; popular: boolean }[] = [
-  { key: "free", price: "$0", periodKey: "forever", popular: false },
-  { key: "pro", price: "$19", periodKey: "perMonth", popular: true },
-  { key: "business", price: "$79", periodKey: "perMonth", popular: false },
+// `active: false` hides a plan from the grid without deleting its copy — the
+// paid tiers aren't live yet. Flip the flags back to true to relaunch them;
+// their translations in messages/{en,de}.json are still in place.
+const planDefs: {
+  key: PlanKey;
+  price: string;
+  periodKey: "forever" | "perMonth";
+  popular: boolean;
+  active: boolean;
+}[] = [
+  { key: "free", price: "$0", periodKey: "forever", popular: false, active: true },
+  { key: "pro", price: "$19", periodKey: "perMonth", popular: true, active: false },
+  { key: "business", price: "$79", periodKey: "perMonth", popular: false, active: false },
 ];
+
+const activePlans = planDefs.filter((plan) => plan.active);
+
+// With only the free plan on show, "choose a plan" / "money-back guarantee"
+// don't apply, so the section falls back to single-plan copy.
+const onlyFreePlan =
+  activePlans.length === 1 && activePlans[0].key === "free";
 
 export function Pricing() {
   const t = useTranslations("Pricing");
@@ -20,11 +36,19 @@ export function Pricing() {
           <h2 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
             {t("heading")}
           </h2>
-          <p className="mt-4 text-muted-foreground">{t("subheading")}</p>
+          <p className="mt-4 text-muted-foreground">
+            {t(onlyFreePlan ? "subheadingFree" : "subheading")}
+          </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-3">
-          {planDefs.map((plan) => {
+        <div
+          className={
+            activePlans.length === 1
+              ? "mx-auto max-w-sm"
+              : "grid gap-6 md:grid-cols-3"
+          }
+        >
+          {activePlans.map((plan) => {
             const features = t.raw(`plans.${plan.key}.features`) as string[];
             return (
               <div
@@ -93,7 +117,7 @@ export function Pricing() {
         </div>
 
         <p className="mt-10 text-center text-sm text-muted-foreground">
-          {t("guarantee")}
+          {t(onlyFreePlan ? "guaranteeFree" : "guarantee")}
         </p>
       </div>
     </section>

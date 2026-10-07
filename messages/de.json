@@ -189,8 +189,10 @@
   "Pricing": {
     "heading": "Einfache, transparente Preise",
     "subheading": "Wähle den Plan, der zu dir passt. Keine versteckten Gebühren, jederzeit kündbar.",
+    "subheadingFree": "Kostenlos starten — ohne Karte. Bezahlpläne folgen in Kürze.",
     "mostPopular": "Beliebteste Wahl",
     "guarantee": "30-Tage-Geld-zurück-Garantie. Ohne Wenn und Aber.",
+    "guaranteeFree": "Keine Kreditkarte, keine Testfrist. Upgraden erst, wenn die Bezahlpläne starten.",
     "perMonth": "pro Monat",
     "forever": "für immer",
     "plans": {
