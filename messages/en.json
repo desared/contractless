@@ -189,8 +189,10 @@
   "Pricing": {
     "heading": "Simple, transparent pricing",
     "subheading": "Choose a plan that fits your needs. No hidden fees, cancel anytime.",
+    "subheadingFree": "Start free — no card required. Paid plans are coming soon.",
     "mostPopular": "Most popular",
     "guarantee": "30-day money-back guarantee. No questions asked.",
+    "guaranteeFree": "No credit card, no trial clock. Upgrade only when paid plans launch.",
     "perMonth": "per month",
     "forever": "forever",
     "plans": {
